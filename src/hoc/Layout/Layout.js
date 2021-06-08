@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react'
 import classes from "./Layout.module.css";
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
+import Hello from "../../components/Navigation/Hello/Hello";
 
 class Layout extends Component {
     state = {
@@ -20,6 +21,7 @@ class Layout extends Component {
     render() {
         return (
             <Fragment>
+                {/*<Hello/>*/}
                 <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler}/>
                 <SideDrawer
                     open={this.state.showSideDrawer}
